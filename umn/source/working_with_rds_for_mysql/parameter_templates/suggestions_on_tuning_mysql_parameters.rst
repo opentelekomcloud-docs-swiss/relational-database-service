@@ -1,0 +1,50 @@
+:original_name: rds_08_00001.html
+
+.. _rds_08_00001:
+
+Suggestions on Tuning MySQL Parameters
+======================================
+
+Parameters are key configuration items in a database system. Improper parameter settings may adversely affect the stable running of databases. This section describes some important parameters for your reference. For details, see `MySQL official website <http://dev.mysql.com/doc/refman/5.6/en/server-system-variables.html>`__.
+
+Sensitive Parameters
+--------------------
+
+Example sensitive parameters are listed in the following:
+
+-  **lower_case_table_names**
+
+   Default value: **1**
+
+   Function: Controls whether database and tables stored on disks are case sensitive. The value **1** indicates that database and table names are case-insensitive and are lowercase by default.
+
+   .. note::
+
+      MySQL 8.0 does not support this parameter.
+
+-  **innodb_flush_log_at_trx_commit**
+
+   Default value: **1**
+
+   Function: Controls the balance between strict ACID compliance for commit operations and higher performance. The default setting of **1** is required for full ACID compliance. Logs are written and flushed to disks at each transaction commit. If the value is set to **0**, logs are written and flushed to disks once per second. If the value is set to **2**, logs are written at each transaction commit and flushed to disks every two seconds.
+
+   Impact: If this parameter is not set to **1**, data security is not guaranteed. When the system fails, data may be lost.
+
+-  **sync_binlog**
+
+   Default value: **1**
+
+   Function: Controls how often the MySQL server synchronizes binary logs to the disk. The default setting of **1** requires synchronization of the binary log to the disk at each transaction commit. If the value is set to **0**, synchronization of the binary log to the disk is not controlled by the MySQL server but relies on the OS to flush the binary log to the disk. This setting provides the best performance, but in the event of a power failure or OS crash, all binary log information in **binlog_cache** is lost.
+
+   Impact: If this parameter is not set to **1**, data security is not guaranteed. When the system fails, data may be lost.
+
+Performance Parameters
+----------------------
+
+Example performance parameters are listed in the following:
+
+-  The values of **innodb_spin_wait_delay** and **query_alloc_block_size** are determined by the DB instance specifications. If you increase their values, database performance may be affected.
+-  If **key_buffer_size** is set to a value smaller than **4096**, the parameter modification will fail.
+-  If **max_connections** is set to a small value, database access will be affected.
+-  The default values of the following parameters are determined by the DB instance specifications: **innodb_buffer_pool_size**, **max_connections**, and **back_log**. These parameter values are **default** before being specified.
+-  The values of **innodb_io_capacity_max** and **innodb_io_capacity** are determined by the storage type. These parameter values are **default** before being specified.
