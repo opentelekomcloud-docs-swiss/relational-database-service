@@ -1,0 +1,36 @@
+:original_name: rds_05_0034.html
+
+.. _rds_05_0034:
+
+Backups and Restorations
+========================
+
+-  :ref:`Working with Backups <en-us_topic_backup_restore>`
+-  :ref:`Configuring an Automated Backup Policy <rds_08_0004>`
+-  :ref:`Creating a Manual Backup <rds_08_0005>`
+-  :ref:`Exporting Backup Information <rds_05_0035>`
+-  :ref:`Downloading a Backup File <rds_08_0006>`
+-  :ref:`Downloading a Binlog Backup File <rds_03_0100>`
+-  :ref:`Setting a Local Retention Period for MySQL Binlogs <rds_05_0037>`
+-  :ref:`Restoring from Backup Files to DB Instances <rds_08_0007>`
+-  :ref:`Restoring from Backup Files to a Self-Built MySQL Database <rds_08_0044>`
+-  :ref:`Restoring a DB Instance to a Point in Time <rds_08_0008>`
+-  :ref:`Replicating a Backup <rds_08_0009>`
+-  :ref:`Deleting a Manual Backup <rds_08_0010>`
+
+.. toctree::
+   :maxdepth: 1
+   :hidden: 
+
+   working_with_backups
+   configuring_an_automated_backup_policy
+   creating_a_manual_backup
+   exporting_backup_information
+   downloading_a_backup_file
+   downloading_a_binlog_backup_file
+   setting_a_local_retention_period_for_mysql_binlogs
+   restoring_from_backup_files_to_db_instances
+   restoring_from_backup_files_to_a_self-built_mysql_database
+   restoring_a_db_instance_to_a_point_in_time
+   replicating_a_backup
+   deleting_a_manual_backup
