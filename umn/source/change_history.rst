@@ -8,6 +8,10 @@ Change History
 +-----------------------------------+---------------------------------------------------------------------------------------------------------------+
 | Released On                       | Description                                                                                                   |
 +===================================+===============================================================================================================+
+| 2024-06-03                        | Modified the following content:                                                                               |
+|                                   |                                                                                                               |
+|                                   | Added :ref:`Suggestions on PostgreSQL Parameter Tuning <rds_pg_10_0001>`.                                     |
++-----------------------------------+---------------------------------------------------------------------------------------------------------------+
 | 2023-08-16                        | This issue is the second official release, which incorporates the following changes:                          |
 |                                   |                                                                                                               |
 |                                   | -  Modifying Supported Instance Specifications in :ref:`DB Instance Classes <rds_01_0029>`.                   |
