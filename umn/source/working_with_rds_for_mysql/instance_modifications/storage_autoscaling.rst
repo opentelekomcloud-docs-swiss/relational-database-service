@@ -29,8 +29,8 @@ Procedure
 
 #. Log in to the management console.
 #. Click |image1| in the upper left corner and select a region and a project.
-#. Click **Service List**. Under **Database**, click **Relational Database Service**. The RDS console is displayed.
-#. On the **Instances** page, click the target DB instance or read replica (click |image2| in front of a DB instance to locate the read replica).
+#. Click |image2| in the upper left corner of the page and choose **Database** > **Relational Database Service**. The RDS console is displayed.
+#. On the **Instances** page, click the target DB instance or read replica (click |image3| in front of a DB instance to locate the read replica).
 #. In the **Storage Space** area, click **Configure Autoscaling**.
 #. In the displayed dialog box, set the following parameters:
 
@@ -48,5 +48,6 @@ Procedure
 
 #. Click **OK**.
 
-.. |image1| image:: /_static/images/en-us_image_0192954074.png
-.. |image2| image:: /_static/images/en-us_image_0000001671636909.png
+.. |image1| image:: /_static/images/en-us_image_0000001907155786.png
+.. |image2| image:: /_static/images/en-us_image_0000001212196809.png
+.. |image3| image:: /_static/images/en-us_image_0000001671636909.png

@@ -31,11 +31,10 @@ Procedure
 
 #. Log in to the management console.
 #. Click |image1| in the upper left corner and select a region and a project.
-#. Click **Service List**. Under **Database**, click **Relational Database Service**. The RDS console is displayed.
-#. Click |image2| in the upper left corner of the page and choose **Databases** > **Relational Database Service**.
+#. Click |image2| in the upper left corner of the page and choose **Database** > **Relational Database Service**. The RDS console is displayed.
 #. On the **Instances** page, click the primary instance name.
 #. In the **DB Information** area on the displayed **Basic Information** page, click **Change** next to the **Replication Mode** field. In the displayed dialog box, select a model and click **OK**.
 #. On the **Basic Information** page, check for the new replication mode.
 
-.. |image1| image:: /_static/images/en-us_image_0192954074.png
-.. |image2| image:: /_static/images/en-us_image_0000001573593177.png
+.. |image1| image:: /_static/images/en-us_image_0000001942554385.png
+.. |image2| image:: /_static/images/en-us_image_0000001212196809.png
