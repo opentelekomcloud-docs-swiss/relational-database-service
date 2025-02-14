@@ -93,7 +93,7 @@ Request
       | version         | Yes             | String          | Specifies the database version. For details, see :ref:`Constraints <rds_09_0302__section380114515317>`. Example values: |
       |                 |                 |                 |                                                                                                                         |
       |                 |                 |                 | -  MySQL: **5.7**                                                                                                       |
-      |                 |                 |                 | -  PostgreSQL: **9.5**                                                                                                  |
+      |                 |                 |                 | -  PostgreSQL: **12**                                                                                                   |
       |                 |                 |                 | -  Microsoft SQL Server: **2014_SE**                                                                                    |
       +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------+
 

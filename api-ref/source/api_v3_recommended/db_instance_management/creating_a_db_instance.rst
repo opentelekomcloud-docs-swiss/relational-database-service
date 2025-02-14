@@ -199,8 +199,8 @@ Request
    | version         | Yes             | String          | Specifies the database version.                                                                                                 |
    |                 |                 |                 |                                                                                                                                 |
    |                 |                 |                 | -  MySQL databases support 5.6, 5.7, and 8.0. Example value: 5.7                                                                |
-   |                 |                 |                 | -  PostgreSQL databases support PostgreSQL 9.5, 9.6, 10, 11, and 12. Example value: 9.6                                         |
-   |                 |                 |                 | -  Microsoft SQL Server databases only support 2014 SE, 2016 SE, 2016 EE, 2017 SE, and 2017 EE. Example value: 2014_SE          |
+   |                 |                 |                 | -  PostgreSQL databases support PostgreSQL 16, 15, 14, 13, 12 and 11. Example value: 12                                         |
+   |                 |                 |                 | -  Microsoft SQL Server databases only support 2022 SE, 2022 SE, 2019 SE, 2019 EE, 2017 SE, and 2017 EE. Example value: 2017_SE |
    |                 |                 |                 |                                                                                                                                 |
    |                 |                 |                 | For details about supported database versions, see section :ref:`Querying Version Information About a DB Engine <rds_06_0001>`. |
    +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------+
