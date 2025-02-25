@@ -87,8 +87,8 @@ Request
       +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
       | version         | Yes             | String          | Specifies the database version.                                                                                                               |
       |                 |                 |                 |                                                                                                                                               |
-      |                 |                 |                 | -  For MySQL, the value can be **5.6** and **5.7**. The value **5.6** is supported by default.                                                |
-      |                 |                 |                 | -  For PostgreSQL, the value can be 9.5, 9.6, 10, and 11. The default value is **9.5**.                                                       |
+      |                 |                 |                 | -  For MySQL, the value can be **5.6**, **5.7** and **8.0**. The value **5.6** is supported by default.                                       |
+      |                 |                 |                 | -  For PostgreSQL, the value can be 16, 15, 14, 13, 12, and 11. The default value is **12**.                                                  |
       +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 
 -  Request example

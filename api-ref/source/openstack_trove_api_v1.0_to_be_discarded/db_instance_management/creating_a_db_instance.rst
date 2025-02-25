@@ -165,8 +165,8 @@ Request
       +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
       | version         | Yes             | String          | Specifies the database version.                                                                           |
       |                 |                 |                 |                                                                                                           |
-      |                 |                 |                 | -  MySQL databases support 5.6 and 5.7. Example value: MySQL-5.7                                          |
-      |                 |                 |                 | -  PostgreSQL databases support 9.5, 9.6, 10, and 11. Example value: PostgreSQL-9.6                       |
+      |                 |                 |                 | -  MySQL databases support 5.6, 5.7 and 8.0. Example value: MySQL-5.7                                     |
+      |                 |                 |                 | -  PostgreSQL databases support 16, 15, 14, 13, 12, and 11. Example value: PostgreSQL-12                  |
       |                 |                 |                 |                                                                                                           |
       |                 |                 |                 | For details about supported database versions, see section :ref:`Database Version Queries <rds_06_0610>`. |
       +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
