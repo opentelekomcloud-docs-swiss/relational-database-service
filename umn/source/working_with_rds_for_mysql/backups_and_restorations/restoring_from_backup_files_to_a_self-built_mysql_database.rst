@@ -40,7 +40,7 @@ Procedure
 
    .. important::
 
-      -  For MySQL 5.6 and 5.7, download `XtraBackup 2.4.9 <https://www.percona.com/downloads/Percona-XtraBackup-2.4/LATEST/>`__ or later versions.
+      -  For MySQL 5.7, download `XtraBackup 2.4.9 <https://www.percona.com/downloads/Percona-XtraBackup-2.4/LATEST/>`__ or later versions.
       -  For MySQL 8.0, download `XtraBackup 8.0 <https://www.percona.com/downloads/Percona-XtraBackup-8.0/LATEST/>`__ or later versions.
 
 #. Upload XtraBackup to the ECS.
@@ -59,14 +59,14 @@ Procedure
 
       **xbstream -x** **-p 4** **<** **./**\ *Full backup file*\ **.qp** **-C** **./backupdir/**
 
-      -  For MySQL 5.6 and 5.7, run **innobackupex --parallel 4 --decompress** **./backupdir**.
+      -  For MySQL 5.7, run **innobackupex --parallel 4 --decompress** **./backupdir**.
       -  For MySQL 8.0, run **xtrabackup --parallel 4 --decompress --target-dir=\ ./backupdir**.
 
       **find** *./backupdir/* **-name** ``'*.qp'`` **\|** *xargs* **rm -f**
 
 #. Apply the log.
 
-   -  For MySQL 5.6 and 5.7, run **innobackupex --apply-log** **./backupdir**.
+   -  For MySQL 5.7, run **innobackupex --apply-log** **./backupdir**.
    -  For MySQL 8.0, run **xtrabackup --prepare --target-dir=./backupdir**.
 
 #. Back up data.
@@ -93,7 +93,7 @@ Procedure
 
 #. Copy the full backup file and modify the directory permissions.
 
-   -  For MySQL 5.6 and 5.7, run **innobackupex --defaults-file=/etc/my.cnf --copy-back** **./backupdir**.
+   -  For MySQL 5.7, run **innobackupex --defaults-file=/etc/my.cnf --copy-back** **./backupdir**.
    -  For MySQL 8.0, run **xtrabackup --defaults-file=/etc/my.cnf --copy-back --target-dir=./backupdir**.
 
    **chown -R** *mysql:mysql /var/lib/mysql/data*

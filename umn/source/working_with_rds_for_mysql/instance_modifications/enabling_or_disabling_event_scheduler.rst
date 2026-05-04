@@ -18,7 +18,7 @@ Event scheduler manages the scheduling and execution of events. The MySQL built-
 Constraints
 -----------
 
--  Only MySQL kernel 5.6.43.2, 5.7.25.2, 8.0.17.4, and later versions are supported.
+-  Only MySQL kernel 5.7.25.2, 8.0.17.4, and later versions are supported.
 -  Event scheduler cannot be enabled for read replicas.
 
 Enabling Event Scheduler

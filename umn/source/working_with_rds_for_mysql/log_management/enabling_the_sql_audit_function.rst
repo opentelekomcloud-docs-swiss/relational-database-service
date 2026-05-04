@@ -13,7 +13,6 @@ By default, SQL audit is disabled because enabling this function may affect data
 
    -  Only the following versions support SQL audit.
 
-      -  MySQL 5.6.43 or later
       -  MySQL 5.7.23 or later
       -  MySQL 8.0
 

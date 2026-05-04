@@ -38,7 +38,7 @@ Modifying Parameter Template Parameters
    -  Enabling the following parameters will affect the database performance: **log_hostname**, **log_duration**, **log_connections**, and **log_disconnections**. Exercise caution when enabling these parameters.
    -  If you enable the parameter **log_duration**, SQL statements containing sensitive information may be recorded in logs. You are advised to disable this parameter.
    -  If the parameter **log_min_duration_statement** is set to **0**, SQL statements containing sensitive information will be recorded in logs. You are advised to disable this parameter by setting it to **-1**.
-   -  The **temp_file_limit** parameter specifies the maximum amount of disk space (in KB) that a session can use for temporary files. It supports PostgreSQL 11 and 12 only. Changing this parameter value is a high-risk operation. Exercise caution when deciding to perform this operation.
+   -  The **temp_file_limit** parameter specifies the maximum amount of disk space (in KB) that a session can use for temporary files. It supports PostgreSQL 12 only. Changing this parameter value is a high-risk operation. Exercise caution when deciding to perform this operation.
 
       -  If the parameter value exceeds the threshold, the DB instance will become unavailable.
       -  If the parameter value is changed to a larger value for temporary use but is not changed to the original value after the use, the disk space will be continuously used to store temporary files. If the disk space is used up, services will be interrupted and the DB instance will become unavailable.
@@ -82,7 +82,7 @@ Modifying Instance Parameters
    -  Enabling the following parameters will affect the database performance: **log_hostname**, **log_duration**, **log_connections**, and **log_disconnections**. Exercise caution when enabling these parameters.
    -  If you enable the parameter **log_duration**, SQL statements containing sensitive information may be recorded in logs. You are advised to disable this parameter.
    -  If the parameter **log_min_duration_statement** is set to **0**, SQL statements containing sensitive information will be recorded in logs. You are advised to disable this parameter by setting it to **-1**.
-   -  The **temp_file_limit** parameter specifies the maximum amount of disk space (in KB) that a session can use for temporary files. It supports PostgreSQL 11 and 12 only. Changing this parameter value is a high-risk operation. Exercise caution when deciding to perform this operation.
+   -  The **temp_file_limit** parameter specifies the maximum amount of disk space (in KB) that a session can use for temporary files. It supports PostgreSQL 12 only. Changing this parameter value is a high-risk operation. Exercise caution when deciding to perform this operation.
 
       -  If the parameter value exceeds the threshold, the DB instance will become unavailable.
       -  If the parameter value is changed to a larger value for temporary use but is not changed to the original value after the use, the disk space will be continuously used to store temporary files. If the disk space is used up, services will be interrupted and the DB instance will become unavailable.
